@@ -145,16 +145,56 @@ form{
     display: flex;
     flex-direction: column;
     padding: 50px;
+    overflow: auto;
 }
 .form-head{
     text-align: center;
-    border-bottom: 1px solid rgb(71, 71, 71);
+    
 }
 .form-head-title{
     font-size: 40px;
 }
-.form-head h3{
-    padding: 30px 0 10px;
+.sgrg{
+    margin: 100px 0 10px;
+    font-size: 20PX;
+    display: flex;
+    bottom: 0;
+}
+
+.sign-in{
+    width: 50%;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px ;
+}
+.border-sign-in{
+    border-bottom: 3px solid black;
+}
+.register{
+    width: 50%;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px ;
+}
+
+.border-register{
+    border-bottom: 3px solid black;
+}
+.form-sign-in{
+    display: none;
+}
+.form-sign-in .forgot-password{
+    border-bottom: 1px solid white;
+    color: black;
+    width: 23%;
+}
+.form-sign-in .forgot-password:hover{
+    transition: 1s;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+} 
+.form-sign-in .forgot-password i{
+    border: none;
 }
 .form-content{
     color: rgb(0,0,0,0.6);
@@ -163,9 +203,19 @@ form{
     padding: 30px 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.form-content h6{
+    font-size: 18px;
+    font-family: "ABChanel Corpo Regular";
+    color: black;
+    margin: auto;
+    margin-top: 20px;
+}
 .form-content p{
     color: black;
     font-size: 13px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
     
 }
 .form-content input, select{
@@ -222,6 +272,7 @@ input:hover, select:hover{
 }
 .dieukhoan{
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
     margin: 0 10px 50px;
     font-size: 15px;
     display: flex;

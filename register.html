@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="// db.onlinewebfonts.com/c/08d38d30f8748388c11592e40dd0ad68?family=ABChanel+Corpo+Light"
+        rel="stylesheet" type="text / css" />
+
+
+    <link rel="icon" href="android-chrome-512x512.png">
+    <link rel="stylesheet" href="register.css">
+    <title>Register</title>
+
+
+</head>
+
+<body>
+
+    <div class="fixed">
+        <div class="dai-den"></div>
+        <nav class="head">
+            <div class="nav-bar-menu" id="nav-bar-menu">
+                <div class="nav-bar-menu-item">
+                    <i onclick="openmenu();" class="fa fa-thin fa-bars "></i>
+                </div>
+
+                <div onclick="openmenu();" class="nav-bar-menu-item" id="nav-bar-menu-item">
+                    MENU
+                </div>
+
+            </div>
+            <h1 class="logo"><a href="index.html">CHANEL</a></h1>
+            <div class="nav-right">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="wish.html"><i class="fa-regular fa-heart"></i></a>
+                <a href="register.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+
+        </nav>
+    </div>
+    <nav class="menu " id="menu">
+        <ul class="menu-container">
+            <li class="menu-item" id="menu-item">
+                <i onclick="closemenu();" class="fa fa-solid fa-xmark fa-2x icon"></i>
+            </li>
+            <li class="menu-item">
+                <span>HAUTE COUTURE</span>
+                <i class="fa-solid fa-angle-right icon"></i>
+            </li>
+            <li class="menu-item">
+                <span>FASHION</span>
+                <i class="fa-solid fa-angle-right icon"></i>
+            </li>
+            <li class="menu-item">
+                <span>FINE JEWELRY</span>
+                <i class="fa-solid fa-angle-right icon"></i>
+            </li>
+            <li class="menu-item">
+                <span>WATCHES</span>
+                <i class="fa-solid fa-angle-right icon"></i>
+            </li>
+            <li class="menu-item">
+                <span>INSIDE CHANEL</span>
+                <i class="fa-solid fa-angle-right icon"></i>
+            </li>
+            <li class="menu-item">
+                <span>FRAGRANCE</span>
+                <i class="fa-solid fa-angle-right icon"></i>
+            </li>
+            <li class="menu-item">
+                <span>MAKEUP</span>
+                <i class="fa-solid fa-angle-right icon"></i>
+            </li>
+            <li class="menu-item">
+                <span>SKINCARE</span>
+                <i class="fa-solid fa-angle-right icon"></i>
+            </li>
+            <li class="menu-item about-chanel">
+                <span>ABOUT CHANEL</span>
+                <i class="fa-solid fa-angle-right icon"></i>
+            </li>
+
+        </ul>
+        <footer>
+            <span>STORE LOCATOR</span>
+            <i class="fa-solid fa-location-dot icon"></i>
+        </footer>
+    </nav>
+    <!-- ================================= FORM REGISTER ===================================== -->
+
+    <div class="form-container">
+        <form>
+            <div class="form-head">
+                <h1 class="form-head-title">ACCOUNT</h1>
+                <div class="sgrg">
+                    <div class="sign-in" id="sign-in">
+                        <h6 onclick="signin();">SIGN IN</h6>
+                    </div>
+                    <div class="register border-register" id="register">
+                        <h6 onclick="register();">REGISTER</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="form-sign-in" id="form-sign-in">
+                <div class="form-content">
+                    <h6>WELCOM BACK.</h6>
+                    <p>Sign in with your email and password.</p>
+                    <input type="text" placeholder="Email">                   
+                    <input type="password" placeholder="Password">
+                    <div class="forgot-password">Forgot password? <i class="fa-solid fa-angle-right"></i></div>
+                </div>
+                
+                <div class="dieukhoan">
+                    <input type="checkbox">
+                    <p>Remember me (optional)</p>
+                </div>
+                
+                <div class="btn-form">
+                    <button class="btn-register">
+                        <h6>SIGN IN</h6>
+                    </button>
+                </div>
+            </div>
+            <div class="form-register" id="form-register">
+                <div class="form-content">
+                    <p>Create an account to enjoy a personalised shopping experience and faster online checkout.</p>
+                    <input type="text" placeholder="Email">
+    
+                    <select class="choose" placeholder="Title">
+                        <option value="Mr">Mr.</option>
+                        <option value="Mrs">Mrs.</option>
+                        <br>
+                    </select>
+    
+                    <input type="text" placeholder="Firt name">
+                    <input type="text" placeholder="Surname">
+    
+                    <div class="phone-number">
+                        <div class="location">
+                            <label for="">Location code</label>
+                            <select name="" id="">
+                                <option value="">+84</option>
+                                <option value="">+44</option>
+                            </select>
+                        </div>
+                        <input class="telephone" type="text" placeholder="Telephone">
+                    </div>
+                    <label for="">Location of residence</label>
+                    <div class="choose">
+                        <select>
+                            <option value="">VIETNAM</option>
+                            <option value="">UNITED KINDOM</option>
+                        </select>
+                    </div>
+                    <div class="birthday">
+                        <label for="">Date of birth (optional)<i class="fa-solid fa-circle-question"></i></label>
+                        <div>
+                            <input type="text" placeholder="Date">
+                            <input type="text" placeholder="Month">
+                        </div>
+                    </div>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="dieukhoan">
+                    <input type="checkbox">
+                    <p>I consent to CHANEL providing me with marketing information about CHANEL products via email, post,
+                        phone
+                        and text message. (optional)</p>
+                </div>
+    
+                <p class="end-form">Further information, in particular regarding your data subject rights, can be found in
+                    the
+                    <a href="">Privacy Policy</a>
+                </p>
+                <div class="btn-form">
+                    <button class="btn-register">
+                        <h6>CREATE ACCOUNT</h6>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- ================================= subfooter ===================================== -->
+
+    <div class="subfooter">
+        <div class="subfooter-container">
+            <div class="subfooter-item">
+                <h3 class="subfooter-title">CONTACT CHANEL</h3>
+
+                <p class="subfooter-content"> CHANEL advisors are available to answer all of your questions.</p>
+                <a href="#">Client Care</a>
+
+            </div>
+            <div class="subfooter-item">
+                <h3 class="subfooter-title">FIND A STORE</h3>
+                <p class="subfooter-content">Enter a location to find the closest CHANEL stores</p>
+                <div class="input">
+                    <input type="text" placeholder="Search by town, city or postcode">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+            </div>
+            <div class="subfooter-item">
+                <h3 class="subfooter-title">NEWSLETTER</h3>
+                <P class="subfooter-content">Subscribe to receive the latest news from CHANEL</P>
+                <div class="input">
+                    <input type="text" placeholder="Enter your email address">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================================== END ======================================= -->
+
+    <div class="end">
+        <div class="logo-end title">
+            <h1>CHANEL</h1>
+        </div>
+        <div class="footer-content">
+            <div class="footer-item">
+                <h3 class="footer-item-title">EXPLORE CHANEL.COM</h3>
+                <div class="footer-item-lv2">Haute Couture</div>
+                <div class="footer-item-lv2">Fashion</div>
+                <div class="footer-item-lv2">High Jewellery</div>
+                <div class="footer-item-lv2">Fine Jewellery</div>
+                <div class="footer-item-lv2">Watches</div>
+                <div class="footer-item-lv2">Eyewear</div>
+                <div class="footer-item-lv2">Fragrance</div>
+                <div class="footer-item-lv2">Makeup</div>
+                <div class="footer-item-lv2">Skincare</div>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item-title"> ONLINE SERVICES </h3>
+                <div class="footer-item-lv2">Payment Methods</div>
+                <div class="footer-item-lv2">Shipping Options</div>
+                <div class="footer-item-lv2">My Account</div>
+                <div class="footer-item-lv2">Returns</div>
+                <div class="footer-item-lv2">Care & Services</div>
+                <div class="footer-item-lv2">FAQ</div>
+
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item-title"> BUOTIQUE SERVICES </h3>
+                <div class="footer-item-lv2">Find a Boutique</div>
+                <div class="footer-item-lv2">Appointments with CHANEL</div>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item-title"> THE HOUSE OF CHANEL </h3>
+                <div class="footer-item-lv2">Careers</div>
+                <div class="footer-item-lv2">Legal</div>
+                <div class="footer-item-lv2">Privacy</div>
+                <div class="footer-item-lv2">Report to Society</div>
+                <div class="footer-item-lv2">Fighting Counterfeits</div>
+                <div class="footer-item-lv2">Financial Results</div>
+                <div class="footer-item-lv2">Modern Slavery Statement</div>
+
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="footer-end-item  footer-end-item-1">
+                <p>
+                    BUI HUU HAU @2022. All Right Reserved
+                </p>
+            </div>
+            <div class="footer-end-item footer-end-item-2">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <i class="fa-brands fa-twitter fa-2x"></i>
+                <i class="fa-brands fa-youtube fa-2x"></i>
+
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+<script>
+
+    function register() {
+        
+        document.getElementById("form-sign-in").style.display = "none";
+        document.getElementById("form-register").style.display = "block";
+        
+        $('.register').addClass('border-register');
+        $('.sign-in').removeClass('border-sign-in');
+    }
+    function signin() {
+        
+        document.getElementById("form-sign-in").style.display = "block";
+        document.getElementById("form-register").style.display = "none";
+        $('.register').removeClass('border-register-2');
+        $('.register').removeClass('border-register');
+        $('.sign-in').addClass('border-sign-in');
+    }
+    
+</script>
+
+</html>

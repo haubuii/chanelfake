@@ -213,6 +213,13 @@ footer{
     
     
 }
+.wish-item-head .new {
+    background-color: #ECECEC ;
+    font-size: 7px;
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+}
 .wish-item-head i{
     font-size: 10px;
     border: none;

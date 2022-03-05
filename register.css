@@ -460,4 +460,9 @@ input:hover, select:hover{
     .menu-item{
         padding: 0 1vh;
     }
+    .form-sign-in .forgot-password{
+        border-bottom: 1px solid white;
+        color: black;
+        width: 40%;
+    }
 }

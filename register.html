@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="// db.onlinewebfonts.com/c/08d38d30f8748388c11592e40dd0ad68?family=ABChanel+Corpo+Light"
-        rel="stylesheet" type="text / css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="// db.onlinewebfonts.com/c/08d38d30f8748388c11592e40dd0ad68?family=ABChanel+Corpo+Light" rel="stylesheet" type="text / css" />
 
 
     <link rel="icon" href="android-chrome-512x512.png">
@@ -111,18 +109,23 @@
                 <div class="form-content">
                     <h6>WELCOM BACK.</h6>
                     <p>Sign in with your email and password.</p>
-                    <input type="text" placeholder="Email">                   
-                    <input type="password" placeholder="Password">
+                    <input type="text" placeholder="Username" id="username_signin">
+                    <div class="err" id="username_signin_err"></div>
+                    <div>
+                        <input type="password" placeholder="Password" id="password_signin">
+                        <i class="fas fa-eye" onclick="eye()"></i>
+                    </div>
+                    <div class="err" id="password_signin_err"></div>
                     <div class="forgot-password">Forgot password? <i class="fa-solid fa-angle-right"></i></div>
                 </div>
-                
+
                 <div class="dieukhoan">
                     <input type="checkbox">
                     <p>Remember me (optional)</p>
                 </div>
-                
+
                 <div class="btn-form">
-                    <button class="btn-register">
+                    <button class="btn-register" id="btn_signin" onclick="check_signin();" type="button">
                         <h6>SIGN IN</h6>
                     </button>
                 </div>
@@ -130,56 +133,107 @@
             <div class="form-register" id="form-register">
                 <div class="form-content">
                     <p>Create an account to enjoy a personalised shopping experience and faster online checkout.</p>
-                    <input type="text" placeholder="Email">
-    
-                    <select class="choose" placeholder="Title">
-                        <option value="Mr">Mr.</option>
-                        <option value="Mrs">Mrs.</option>
-                        <br>
+                    <input type="text" placeholder="Username" id="username">
+                    <div class="err" id="username_err"></div>
+
+                    <input type="email" placeholder="Email" id="email">
+                    <div class="err" id="email_err"></div>
+
+                    <input type="text" placeholder="Full name" id="name">
+                    <div class="err" id="name_err"></div>
+
+                    <label for="choose">Sex</label>
+                    <select class="choose sex_label sex_select" placeholder="Title">
+                        <option value="" name="sex_select">...</option>
+                        <option value="Mr" name="sex_select">Male</option>
+                        <option value="Mrs" name="sex_select">Female</option>
+                        <option value="Others" name="sex_select">Others</option>                       
                     </select>
-    
-                    <input type="text" placeholder="Firt name">
-                    <input type="text" placeholder="Surname">
-    
-                    <div class="phone-number">
-                        <div class="location">
-                            <label for="">Location code</label>
-                            <select name="" id="">
-                                <option value="">+84</option>
-                                <option value="">+44</option>
-                            </select>
-                        </div>
-                        <input class="telephone" type="text" placeholder="Telephone">
-                    </div>
-                    <label for="">Location of residence</label>
+                    <div class="err" id="sex_err"></div>
+
+                    <label for="">Nationality</label>
                     <div class="choose">
-                        <select>
-                            <option value="">VIETNAM</option>
-                            <option value="">UNITED KINDOM</option>
+                        <select class="choose select_nationality">
+                            <option value="">...</option>
+                            <option value="VIETNAM">VIETNAM</option>
+                            <option value="UNITED">UNITED KINDOM</option>
                         </select>
                     </div>
+                    <div class="err" id="nationality_err"></div>
+
                     <div class="birthday">
-                        <label for="">Date of birth (optional)<i class="fa-solid fa-circle-question"></i></label>
+                        <label for=" ">Date of birth (optional)<i class="fa-solid fa-circle-question "></i></label>
+
                         <div>
-                            <input type="text" placeholder="Date">
-                            <input type="text" placeholder="Month">
+                            <select class="choose select_month" placeholder="Month">
+                                <option value="">Month</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>                                                        
+                                <br>
+                            </select>
+
+                            <select class="choose select_day" name="select_day" placeholder="Day">
+                                <option value="">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>                                
+                            </select>
+                        </div>
+                        <div class="day_err">
+                            <div class="err" id="month_birthday_err"></div>
+                            <div class="err bday_err" id="day_birthday_err"></div>
                         </div>
                     </div>
-                    <input type="password" placeholder="Password">
+
+
+                    <input type="password" placeholder="Password" id="password">
+                    <div class="err" id="password_err"></div>
+
+                    <input type="password" placeholder="Confirm Password" id="confirm_password" >
+                    <div class="err" id="confirm_password_err"></div>
+
                 </div>
-                <div class="dieukhoan">
-                    <input type="checkbox">
-                    <p>I consent to CHANEL providing me with marketing information about CHANEL products via email, post,
-                        phone
-                        and text message. (optional)</p>
-                </div>
-    
-                <p class="end-form">Further information, in particular regarding your data subject rights, can be found in
-                    the
-                    <a href="">Privacy Policy</a>
-                </p>
-                <div class="btn-form">
-                    <button class="btn-register">
+
+                <div class="btn-form ">
+                    <button class="btn-register" onclick="check_register(); " type="button">
                         <h6>CREATE ACCOUNT</h6>
                     </button>
                 </div>
@@ -285,24 +339,24 @@
 
 </body>
 <script>
-
     function register() {
-        
+
         document.getElementById("form-sign-in").style.display = "none";
         document.getElementById("form-register").style.display = "block";
-        
+
         $('.register').addClass('border-register');
         $('.sign-in').removeClass('border-sign-in');
     }
+
     function signin() {
-        
+
         document.getElementById("form-sign-in").style.display = "block";
         document.getElementById("form-register").style.display = "none";
         $('.register').removeClass('border-register-2');
         $('.register').removeClass('border-register');
         $('.sign-in').addClass('border-sign-in');
     }
-    
 </script>
+<script src="register.js"></script>
 
 </html>

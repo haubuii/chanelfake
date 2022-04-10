@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;       
+        
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /* -------------------------- FORM -------------------------- */
+    form {
+        margin: 40px auto;
+        width: 85%;
+        height: 600px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding:  0 20px;
+        border: 1px solid #ddd;         
+        position: relative;
+    }
+    
+
+    form h1 {
+        text-align: center;
+        margin: 15px;
+    }
+
+    input {
+        margin: 10px 0;
+        padding: 3px 0;
+        border: none;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+        height: 30px;
+    }
+
+    .btn {
+        margin: 10px 0;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 17px;
+        padding: 10px 20px;
+        cursor: pointer;
+
+    }
+
+    .ket_qua {
+        /* border: 1px solid #ddd; */
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .ket_qua_item {
+        margin: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .ket_qua_item span {
+        display: block;
+
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* ------------------- Table -------------------- */
+    .table_container {
+        margin: 40px;
+        width: 200%;
+        height: 600px;
+        /* height: 720px; */
+        overflow: auto;
+    }
+
+    .table_title {
+        border-top: 1px solid #ddd;
+        background-color: rgb(238, 238, 238);
+    }
+
+    .table_item {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        justify-content: center;
+
+    }
+
+    .table_item .id {
+        width: 5%;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        padding: 10px 3px;
+        background-color: rgb(245, 244, 244);
+
+    }
+
+    .table_item .product_name {
+        border-right: 1px solid #ddd;
+        padding: 10px 3px;
+        width: 20%;
+
+    }
+
+    .table_item .product_price {
+        border-right: 1px solid #ddd;
+        padding: 10px 3px;
+        width: 20%;
+
+    }
+
+    .table_item .product_url {
+        border-right: 1px solid #ddd;
+        padding: 10px 3px;
+        width: 40%;
+    }
+
+    .table_item .product_describe {
+        border-right: 1px solid #ddd;
+        padding: 10px 3px;
+        width: 20%;
+    }
+
+    /* Product_container */
+
+</style>
+
+<body>
+    <div class="container">
+        <form action="" id="control">
+            <H1>Sản phẩm</H1>
+
+            <input type="text" placeholder="Nhập id sản phẩm" id="id_san_pham">
+            <input type="text" placeholder="Nhập Tên sản phẩm" id="ten_san_pham">
+            <input type="text" placeholder="Nhập Giá Sản Phẩm" id="gia_san_pham">
+            <input type="text" placeholder="Nhập URL hình ảnh sản phẩm" id="hinh_anh_san_pham">
+            <input type="text" placeholder="Nhập mô tả sản phẩm" id="mo_ta_san_pham">
+
+
+            <button id="btn_them_san_pham" class="btn" type="button">Thêm Sản Phẩm</button>
+            <button id="btn_update_thong_tin_san_pham" class="btn" type="button">Update thông Sản Phẩm</button>
+            <input type="text" oninput="oninput_check_name_id()" id="check_name_id" placeholder="Tìm sản phẩm theo tên hoặc ID">
+
+            <input type="text" placeholder="Nhập id sản phẩm" id="id_san_pham_select">
+            <button id="btn_xoa_san_pham" class="btn" type="button">Xóa Sản Phẩm Theo ID</button>
+            <button class="btn" onclick="sap_xep_theo_gia()" type="button">Xấp xếp theo giá</button>
+
+
+
+    </div>
+    </form>
+    <div class="table_container">
+        <div class="table_title table_item">
+            <div class="id">ID</div>
+            <div class="product_name">Tên Sản Phẩm</div>
+            <div class="product_price">Giá Sản Phẩm</div>
+            <div class="product_url">URL Hình Ảnh</div>
+            <div class="product_describe">Mô Tả</div>
+        </div>
+        <div class="table_item_container">
+           
+        </div>
+        
+        
+    </div>
+    </div>
+
+
+</body>
+
+<script src="call_back_localStorage.js"></script>
+<script src="add_san_pham.js"></script>
+
+</html>

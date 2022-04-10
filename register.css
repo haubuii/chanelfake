@@ -322,6 +322,39 @@ input:hover, select:hover{
     border-bottom: 1px solid #fff;
     transition: 1s;
 }
+/* ======================== Validator ===================== */
+
+.err {
+    color: red;
+}
+
+.err_border {
+    border: 1px solid red !important;
+    background-color: rgb(250, 0, 0, 0.01);
+}
+
+.sex_label {
+    margin-top: 0;
+}
+
+label {
+    margin-left: 5px;
+}
+
+#nationality_err,
+.birthday {
+    margin-bottom: 25px;
+}
+
+.day_err {
+    display: flex;
+}
+
+.bday_err {
+    position: relative;
+    right: 19px;
+}
+
 
 /* ========================= subfooter==================== */
 

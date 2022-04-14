@@ -10,11 +10,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="// db.onlinewebfonts.com/c/08d38d30f8748388c11592e40dd0ad68?family=ABChanel+Corpo+Light"
-        rel="stylesheet" type="text / css" />
-    <link rel="stylesheet" href="index.css">
+    rel="stylesheet" type="text / css" />
+    <link rel="stylesheet" href="Danh_sach_san_pham.css">
 
     <link rel="icon" href="android-chrome-512x512.png">
-    <title>Chà neo pha ke</title>
+    <title>List Product</title>
 
 
 
@@ -62,7 +62,7 @@
                 <span>FINE JEWELRY</span>
                 <i class="fa-solid fa-angle-right icon"></i>
             </li>
-            <li class="menu-item watch_click">
+            <li class="menu-item">
                 <span>WATCHES</span>
                 <i class="fa-solid fa-angle-right icon"></i>
             </li>
@@ -112,7 +112,7 @@
                 <span>FINE JEWELRY</span>
                 <i class="fa-solid fa-angle-right icon-2"></i>
             </li>
-            <li class="menu-2-item watch_click">
+            <li class="menu-2-item">
                 <span>WATCHES</span>
                 <i class="fa-solid fa-angle-right icon-2"></i>
             </li>
@@ -144,94 +144,38 @@
         </footer>
     </nav>
 
-    <!-- =============================== FASHION SHOW ============================= -->
-    <div class="fashion-show">
-        <video playsinline autoplay loop muted poster="Video/Screenshot 2022-02-23 210002.png">
-            <source src="Video/videosBG.mp4" type="video/mp4 ">
-        </video>
-        <div class="fashion-show-content">
-            <P>HAUTE COUTURE</P>
-            <h2 class="title">SPRING-SUMMER 2022
-                <br>
-                <span>SHOW</span>
-            </h2>
+    <!-- =============================== List Product ================================== -->
+    
+    <div class="list_product_container">
 
-            <button class="btn">
-                <p>SEE MORE</p>
-            </button>
-        </div>
-    </div>
+        <div class="list_item_container">
 
-    <!-- ===================================== COLLECTION ================================== -->
+            <div class="list_item">
+                <div class="item">
+                    <div class="item_image">
+                        <img src="https://www.chanel.com/images/t_one////q_auto:good,f_auto,fl_lossy,dpr_1.2/w_620//boy-friend-skeleton-watch-black-beige-beige-gold-calfskin-packshot-default-h6594-8845565919262.jpg" alt="">
+                    </div>
+                    <h4 class="item_title">
+                        BOY·FRIEND SKELETON WATCH
+                    </h4>
+                    <div class="item_describe">
+                        Large version, BEIGE GOLD, quilted pattern calfskin strap
+                    </div>
+                    <h4 class="item_price">
+                        £35,000
+                    </h4>
+                    <div class="view_details">
+                        View details >
+                    </div>
+                </div>
+            </div>
 
-    <div class="collection">
-        <P>FASHION</P>
-        <h2 class="title">PRE-COLLECTION
-            <br>
-            <span>SPRING-SUMMER 2022 </span>
-        </h2>
-        <button class="btn">
-            <p>SEE MORE</p>
-        </button>
-    </div>
-
-    <!-- =============================== CHANEL GLASSES ===================================== -->
-
-    <div class="chanel-glasses">
-        <P>EYEWEAR</P>
-        <h2 class="title">THE LATEST CHANEL GLASSES
-            <br>
-            <span>COLLECTIONS </span>
-        </h2>
-        <button class="btn-dark">
-            <p>SEE MORE</p>
-        </button>
-    </div>
-
-
-    <!-- ==================================== WATCHES ===================================== -->
-
-    <div class="watches">
-        <div></div class="watches-container">
-        <div class="watches-container">
-            <P>WATCHES</P>
-            <h2 class="title">WATCHES J12 CALIBER 12.2
-                <br>
-                <span>EDITION</span>
-            </h2>
-            <button class="btn">
-                <p>SEE MORE</p>
-            </button>
-        </div>
-    </div>
-
-    <!-- ==================================== COCO CRUSH ==================================== -->
-
-    <div class="coco-crush">
-        <P>FINE JEWELLERY</P>
-        <h2 class="title">COCO CRUSH
-            <br>
-            <span></span>
-        </h2>
-
-        <button class="btn-dark">
-            <p>SEE MORE</p>
-        </button>
-    </div>
-
-    <!-- ================================= No1 DE CHANEL ===================================== -->
-
-    <div class="no1-chanel">
-        <div class="no1-chanel-item">
-            <h1 class="no1">N°1</h1>
-            <p class="de">DE</p>
-            <h1 class="chanel">CHANEL</h1>
+            
         </div>
 
-        <button class="btn-dark">
-            <p>SEE MORE</p>
-        </button>
     </div>
+
+
 
     <!-- ================================= subfooter ===================================== -->
 
@@ -370,14 +314,7 @@
         })
     })
 
-
-    document.querySelector('.btn').addEventListener('click', e => {
-        window.location = "http://127.0.0.1:5500/Danh_sach_san_pham/Danh_sach_san_pham.html";
-    })
-    document.querySelector('.watch_click').addEventListener('click', e => {
-        window.location = "http://127.0.0.1:5500/Danh_sach_san_pham/Danh_sach_san_pham.html";
-    })
-
 </script>
+<script src="Danh_sach_san_pham.js"></script>
 
 </html>

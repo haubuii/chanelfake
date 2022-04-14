@@ -11,10 +11,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="// db.onlinewebfonts.com/c/08d38d30f8748388c11592e40dd0ad68?family=ABChanel+Corpo+Light"
         rel="stylesheet" type="text / css" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="slide.css">
 
     <link rel="icon" href="android-chrome-512x512.png">
-    <title>Chà neo pha ke</title>
+    <title>Product</title>
 
 
 
@@ -62,7 +62,7 @@
                 <span>FINE JEWELRY</span>
                 <i class="fa-solid fa-angle-right icon"></i>
             </li>
-            <li class="menu-item watch_click">
+            <li class="menu-item">
                 <span>WATCHES</span>
                 <i class="fa-solid fa-angle-right icon"></i>
             </li>
@@ -112,7 +112,7 @@
                 <span>FINE JEWELRY</span>
                 <i class="fa-solid fa-angle-right icon-2"></i>
             </li>
-            <li class="menu-2-item watch_click">
+            <li class="menu-2-item">
                 <span>WATCHES</span>
                 <i class="fa-solid fa-angle-right icon-2"></i>
             </li>
@@ -144,94 +144,63 @@
         </footer>
     </nav>
 
-    <!-- =============================== FASHION SHOW ============================= -->
-    <div class="fashion-show">
-        <video playsinline autoplay loop muted poster="Video/Screenshot 2022-02-23 210002.png">
-            <source src="Video/videosBG.mp4" type="video/mp4 ">
-        </video>
-        <div class="fashion-show-content">
-            <P>HAUTE COUTURE</P>
-            <h2 class="title">SPRING-SUMMER 2022
-                <br>
-                <span>SHOW</span>
-            </h2>
+    <!-- ============================ Product information =========================== -->
 
-            <button class="btn">
-                <p>SEE MORE</p>
-            </button>
+    <div class="product_info_container">
+        <div class="product_info">
+            <div class="product_info_item slide_container">
+                <div class="slide_dot">
+                    <div class="dot" onclick="dot_btn_0();"></div>
+                    <div class="dot" onclick="dot_btn_1();"></div>
+                    <div class="dot" onclick="dot_btn_2();"></div>
+                    
+                </div>
+                <div class="slide_container_item" id="slide_show">
+                    <div class="slide_main">
+                        <img src="images/J12 electro 1.webp " class="img_slide img_slide_1">
+                        <img src="images/J12 electro 2.webp " class="img_slide img_slide_2">
+                        <img src="images/J12 electro 3.webp " class="img_slide img_slide_3">                        
+                    </div>
+                    <!-- <i class="fa-solid fa-angle-down next_img"></i> -->
+                    <i class="fa-solid fa-chevron-down next_img"></i>
+                </div>
+            </div>
+            <div class="product_info_item_container">
+                <div class="product_info_item product_info_item_container_item ">
+                    <h1 class="product_info_title">
+                        J12 ELECTRO DREAM WATCH CALIBRE 12.1, 38 MM
+                    </h1>
+                    <p class="product_detail">
+                        Matte black highly resistant ceramic and steel with black ADLC treatment set with baguette-cut
+                        rainbow sapphires
+                        <a href="">More details</a>
+                    </p>
+                    <span>Ref. H6828</span>
+                    <h3 class="product_price">                        
+                        <p>£82,500*</p>
+                        <i class="fa-regular fa-heart"></i>
+                    </h3>
+
+                    <div class="product_size">
+                        <h5>case size</h5>                        
+                        <span>38 x 12.6 mm</span>
+                    </div>
+
+                    <button class="btn" type="button"><h4>CONTACT US</h4></button>
+
+                    <div class="more_info">
+                        <p>*Suggested retail price.</p>
+                        <a href=""><span>More information</span></a>
+                    </div>
+                    
+                    <span>Limited edition restricted to 55 piece(s)</span>
+                </div>
+            </div>
+            
         </div>
     </div>
 
-    <!-- ===================================== COLLECTION ================================== -->
 
-    <div class="collection">
-        <P>FASHION</P>
-        <h2 class="title">PRE-COLLECTION
-            <br>
-            <span>SPRING-SUMMER 2022 </span>
-        </h2>
-        <button class="btn">
-            <p>SEE MORE</p>
-        </button>
-    </div>
-
-    <!-- =============================== CHANEL GLASSES ===================================== -->
-
-    <div class="chanel-glasses">
-        <P>EYEWEAR</P>
-        <h2 class="title">THE LATEST CHANEL GLASSES
-            <br>
-            <span>COLLECTIONS </span>
-        </h2>
-        <button class="btn-dark">
-            <p>SEE MORE</p>
-        </button>
-    </div>
-
-
-    <!-- ==================================== WATCHES ===================================== -->
-
-    <div class="watches">
-        <div></div class="watches-container">
-        <div class="watches-container">
-            <P>WATCHES</P>
-            <h2 class="title">WATCHES J12 CALIBER 12.2
-                <br>
-                <span>EDITION</span>
-            </h2>
-            <button class="btn">
-                <p>SEE MORE</p>
-            </button>
-        </div>
-    </div>
-
-    <!-- ==================================== COCO CRUSH ==================================== -->
-
-    <div class="coco-crush">
-        <P>FINE JEWELLERY</P>
-        <h2 class="title">COCO CRUSH
-            <br>
-            <span></span>
-        </h2>
-
-        <button class="btn-dark">
-            <p>SEE MORE</p>
-        </button>
-    </div>
-
-    <!-- ================================= No1 DE CHANEL ===================================== -->
-
-    <div class="no1-chanel">
-        <div class="no1-chanel-item">
-            <h1 class="no1">N°1</h1>
-            <p class="de">DE</p>
-            <h1 class="chanel">CHANEL</h1>
-        </div>
-
-        <button class="btn-dark">
-            <p>SEE MORE</p>
-        </button>
-    </div>
 
     <!-- ================================= subfooter ===================================== -->
 
@@ -370,14 +339,7 @@
         })
     })
 
-
-    document.querySelector('.btn').addEventListener('click', e => {
-        window.location = "http://127.0.0.1:5500/Danh_sach_san_pham/Danh_sach_san_pham.html";
-    })
-    document.querySelector('.watch_click').addEventListener('click', e => {
-        window.location = "http://127.0.0.1:5500/Danh_sach_san_pham/Danh_sach_san_pham.html";
-    })
-
 </script>
+<script src="slide.js"></script>
 
 </html>

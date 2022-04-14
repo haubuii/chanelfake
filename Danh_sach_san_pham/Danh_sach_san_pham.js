@@ -43,13 +43,13 @@ document.querySelector(".list_item_container").innerHTML = test;
 
 
 document.querySelector('.click_item_0').addEventListener('click', e =>{
-    window.location = "/slide/blue.html";
+    window.location = "/../slide/blue.html";
 })
 
 document.querySelector('.click_item_1').addEventListener('click', e =>{
-    window.location = "/slide/j12_calibre.html";
+    window.location = "/../slide/j12_calibre.html";
 })
 
 document.querySelector('.click_item_2').addEventListener('click', e =>{
-    window.location = "/slide/monsieur.html";
+    window.location = "/../slide/monsieur.html";
 })

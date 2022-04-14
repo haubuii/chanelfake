@@ -9,8 +9,7 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link href="// db.onlinewebfonts.com/c/08d38d30f8748388c11592e40dd0ad68?family=ABChanel+Corpo+Light"
-        rel="stylesheet" type="text / css" />
+    <link href="//db.onlinewebfonts.com/c/5fd740bac1abfb826fb7e35ae963efc9?family=ABChanel+Corpo+Regular" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="index.css">
 
     <link rel="icon" href="android-chrome-512x512.png">
@@ -146,7 +145,7 @@
 
     <!-- =============================== FASHION SHOW ============================= -->
     <div class="fashion-show">
-        <video playsinline autoplay loop muted poster="Video/Screenshot 2022-02-23 210002.png">
+        <video playsinline autoplay loop muted poster="">
             <source src="Video/videosBG.mp4" type="video/mp4 ">
         </video>
         <div class="fashion-show-content">
@@ -372,10 +371,12 @@
 
 
     document.querySelector('.btn').addEventListener('click', e => {
-        window.location = "http://127.0.0.1:5500/Danh_sach_san_pham/Danh_sach_san_pham.html";
+        // window.location = "http://127.0.0.1:5500/Danh_sach_san_pham/Danh_sach_san_pham.html";
+        location.replace("http://127.0.0.1:5500/Danh_sach_san_pham/Danh_sach_san_pham.html");
     })
     document.querySelector('.watch_click').addEventListener('click', e => {
-        window.location = "http://127.0.0.1:5500/Danh_sach_san_pham/Danh_sach_san_pham.html";
+        // window.location = "http://127.0.0.1:5500/Danh_sach_san_pham/Danh_sach_san_pham.html";
+        location.replace("http://127.0.0.1:5500/Danh_sach_san_pham/Danh_sach_san_pham.html");
     })
 
 </script>
